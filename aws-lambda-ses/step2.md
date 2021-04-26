@@ -8,7 +8,7 @@ Navigate to the `IAM Service`, click on the `Policies` tab and press `Create pol
 
 Using the JSON Editor copy and paste the following policy:
 
-<pre class="file" data-target="copy">
+<pre class="file" data-target="clipboard">
 {
     "Version": "2012-10-17",
     "Statement": [
