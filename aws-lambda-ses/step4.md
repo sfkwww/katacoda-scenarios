@@ -4,13 +4,13 @@ Navigate to the `Lambda` service and create a new function from scratch with a n
 
 Next we'll write the following code and click deploy.
 
-<pre class="javascript">
+<pre class="file">
 var aws = require("aws-sdk");
 var ses = new aws.SES({ region: "us-west-2" });
 exports.handler = async function (event) {
   var params = {
     Destination: {
-      ToAddresses: ["sfkwww@gmail.com"],
+      ToAddresses: ["destination@email.com"],
     },
     Message: {
       Body: {
@@ -19,7 +19,7 @@ exports.handler = async function (event) {
 
       Subject: { Data: "Re: Help, From: Kumar" },
     },
-    Source: "swill.devops@gmail.com",
+    Source: "source@email.com",
   };
 
   return ses.sendEmail(params).promise()
