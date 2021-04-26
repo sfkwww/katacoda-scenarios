@@ -6,4 +6,6 @@ In order to send and receive emails we will need to verify the emails for both t
 
 From here verify two email addresses that we'll use in the next steps.
 
->Note the region which the email addresses are associated with, this will be the region which we create the lambda function in the next step. For example `us-east-2`
+>Note the region which the email addresses are associated with, this will be the region which we create the lambda function in the next step. For example `us-west-2`. The region can be changed by clicking on the region next to your profile name.
+
+![AWS Region Location](assets/SES-Email.png)
