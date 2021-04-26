@@ -4,7 +4,7 @@ Navigate to the `Lambda` service and create a new function from scratch with a n
 
 Next we'll write the following code and click deploy.
 
-<pre><code class="javascript">
+<pre class="javascript">
 var aws = require("aws-sdk");
 var ses = new aws.SES({ region: "us-west-2" });
 exports.handler = async function (event) {
@@ -24,6 +24,6 @@ exports.handler = async function (event) {
 
   return ses.sendEmail(params).promise()
 };
-</pre></code>
+</pre>
 
 The imported `aws-sdk` allows us to use Javascript API for AWS services. In this particular function we use it to access the SES service.
