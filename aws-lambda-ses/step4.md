@@ -4,7 +4,7 @@ Navigate to the `Lambda` service and create a new function from scratch with a n
 
 Next we'll write the following code and click deploy.
 
-<pre class="file">
+<pre class="file" data-target="copy">
 var aws = require("aws-sdk");
 var ses = new aws.SES({ region: "us-west-2" });
 exports.handler = async function (event) {

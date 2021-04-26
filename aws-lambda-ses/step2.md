@@ -8,7 +8,7 @@ Navigate to the `IAM Service`, click on the `Policies` tab and press `Create pol
 
 Using the JSON Editor copy and paste the following policy:
 
-```
+<pre class="file" data-target="copy">
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -22,7 +22,7 @@ Using the JSON Editor copy and paste the following policy:
          }
      ]
 }
-```
+</pre>
 
 Continue with the rest of the steps and name the policy `WriteEmails`.
 
