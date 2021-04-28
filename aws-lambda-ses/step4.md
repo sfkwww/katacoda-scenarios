@@ -1,8 +1,8 @@
 ## Creating the Lambda Function
 
-Navigate to the `Lambda` service and create a new function from scratch with a name of your choice (Eg. `sendEmailLambda`) and assign it the permission that we created in step 2 (`LambdaEmail`).
+Navigate to the `Lambda` service and create a new function from scratch with Node.js runtime. Give it a name of your choice (Eg. `sendEmailLambda`) and assign it the permission that we created in step 2 (`LambdaEmail`) by pressing `Change default execution role` and then pick `Use an existing role`.
 
-Next we'll write the following code and click deploy.
+Next we'll write the following code and click deploy. (Be sure to change the emails to the ones you have used)
 
 <pre class="file" data-target="clipboard">
 var aws = require("aws-sdk");
